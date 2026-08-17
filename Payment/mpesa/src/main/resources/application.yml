@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: mpesa-integration-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mpesa_integration
+    username: mpesa_user
+    password: change_me
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+mpesa:
+  daraja:
+    base-url: https://sandbox.safaricom.co.ke
+    consumer-key: your-consumer-key
+    consumer-secret: your-consumer-secret
+    passkey: your-passkey
+    shortcode: "174379"
+  callback-url: https://your-ngrok-subdomain.ngrok.io/api/mpesa/callback
