@@ -31,6 +31,9 @@ public class StkCorrelation {
     @Column(nullable = false)
     private Instant requestedAt;
 
+    @Column(nullable = false)
+    private boolean resolved = false;
+
     public StkCorrelation(String checkoutRequestId, UUID paymentId) {
         this.checkoutRequestId = checkoutRequestId;
         this.paymentId = paymentId;

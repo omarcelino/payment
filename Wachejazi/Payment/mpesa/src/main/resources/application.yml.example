@@ -16,8 +16,8 @@ spring:
 mpesa:
   daraja:
     base-url: https://sandbox.safaricom.co.ke
-    consumer-key: jGLL6PDqQR2qIUvl0KNoOYG4t6B7UjWcBHGhcwGvpGfsYOei
-    consumer-secret: mqBGRO0flZgYfg5siEpktAxCP02MIzKm7ElaGCOLnSViILtricRVBHzGnnrNTKpq
-    passkey: bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919
+    consumer-key: your-consumer-key
+    consumer-secret: your-consumer-secret
+    passkey: your-passkey
     shortcode: "174379"
-  callback-url: https://flatterer-preformed-epiphany.ngrok-free.dev/api/mpesa/callback
+  callback-url: https://your-ngrok-subdomain.ngrok.io/api/mpesa/callback
